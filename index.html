@@ -4,8 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, inital-scale"
     link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevLooper</title>
     <link href="/style.css" rel="stylesheet">
+<!-- Code injected by live-server -->
+<!-- <script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script> -->
+</head>
+
+<header>
+<section class="secao-logotipo">
+  <div class="card">
+    <div class="fundo"><img src="img/DEV.svg" alt="Logotipo da empresa" class="Logotipo"></div>
+  </div>
+</section>
+  <nav>
+    <a href="sobre">Sobre nós</a>
+    <a href="#">Cases</a>
+    <a href="#">Referêcias</a>
+    <a href="#">Portfólio</a>
+    <a href="#">Contato</a>
+    <div class="animation start-home"></div> 
+  </nav>
+</header>
+
+
+
+
+<body>
+
+<section class="sobre-a-empresa" id="sobre">
+  <div class="foto-empresa"><img src="img/empresa.png" alt=""></div>
+  <div class="texto-introducao">
+    <p class="para">"A DevLooper é uma empresa de gamificação de ponta que está revolucionando a forma como as empresas interagem com seus clientes e funcionários. Estabelecido com a visão de infundir entusiasmo e motivação nas atividades cotidianas, o DevLooper emprega princípios e tecnologias de design de jogos de última geração para criar experiências envolventes e gratificantes."</p>
+
+  </div>
+</section>
+
+
+  
+
+      <h2>cases</h2>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Empresa</h4>
+              <ul>
+                <li><a href="#">sobre nós</a></li>
+                <li><a href="#">nossos serviços</a></li>
+                <li><a href="#">política de privacidade</a></li>
+                <li><a href="#">afiliados</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Assistência</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">encomendas</a></li>
+                <li><a href="#">retornos</a></li>
+                <li><a href="#">opções de pagamento</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Nos siga</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+     </footer>
+
+
+
+
+
 <!-- Code injected by live-server -->
 <script>
 	// <![CDATA[  <-- For SVG support
@@ -44,22 +157,5 @@
 	}
 	// ]]>
 </script>
-</head>
-
-<header>
-    <nav>
-        <a href="#">Sobre nós</a>
-        <a href="#">Cases</a>
-        <a href="#">Referêcias</a>
-        <a href="#">Portfólio</a>
-        <a href="#">Contato</a>
-        <div class="animation start-home"></div> 
-    </nav>
-</header>
-
-
-
-
-<div class="card">
-    <div class="fundo"><img src="img/DEV.svg" alt="Logotipo da empresa" class="Logotipo"></div>
-</div>
+</body>
+</html>
