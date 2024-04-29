@@ -49,7 +49,7 @@
 
 <header>
 <section class="secao-logotipo">
-  <div class="card">
+  <div class="card2">
     <div class="fundo"><img src="img/DEV.svg" alt="Logotipo da empresa" class="Logotipo"></div>
   </div>
 </section>
@@ -57,8 +57,8 @@
     <a href="sobre">Sobre nós</a>
     <a href="#">Cases</a>
     <a href="#">Referêcias</a>
-    <a href="#">Portfólio</a>
-    <a href="#">Contato</a>
+    <a href="#">Contate-nos</a>
+    <a href="#">Social</a>
     <div class="animation start-home"></div> 
   </nav>
 </header>
@@ -80,6 +80,58 @@
   
 
       <h2>cases</h2>
+<section id="cases">
+	  <div class="container1">
+        <div class="parent">
+            <div class="card">
+                <div class="content-box">
+                    <h1 class="card-title">Epic Games</h1>
+                    <p class="card-content">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum quaerat facilis 
+                        aliquid deleniti impedit, eum totam tempora dolore obcaecati, officiis dolor? Soluta repellendus asperiores ut in, laborum facilis voluptates perspiciatis.
+                    </p>
+                    <span class="see-more">Ver mais</span>
+                </div>
+                <div class="date-box">
+                    <img src="img/EpicGames.png">
+                </div>
+            </div>
+        </div>
+        
+        <div class="parent card2">
+          <div class="card">
+            <div class="content-box2">
+                <h1 class="card-title">Steam</h1>
+                <p class="card-content">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum quaerat facilis 
+                    aliquid deleniti impedit, eum totam tempora dolore obcaecati, officiis dolor? Soluta repellendus asperiores ut in, laborum facilis voluptates perspiciatis.
+                </p>
+                <span class="see-more">Ver mais</span>
+            </div>
+            <div class="date-box2">
+                <img src="img/Steam.png">
+            </div>
+        </div>
+        </div>
+
+        <div class="parent card3">
+          <div class="card">
+            <div class="content-box3">
+                <h1 class="card-title">Riot</h1>
+                <p class="card-content">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum quaerat facilis 
+                    aliquid deleniti impedit, eum totam tempora dolore obcaecati, officiis dolor? Soluta repellendus asperiores ut in, laborum facilis voluptates perspiciatis.
+                </p>
+                <span class="see-more">Ver mais</span>
+            </div>
+            <div class="date-box3">
+                <img src="img/Riot.png">
+            </div>
+        </div>
+        </div>
+    </div>
+    <button class="btn">DevLooper!</button>
+</section>
 
       <footer class="footer">
         <div class="container">
@@ -122,40 +174,45 @@
 <!-- Code injected by live-server -->
 <script>
 	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
+	// if ('WebSocket' in window) {
+	// 	(function () {
+	// 		function refreshCSS() {
+	// 			var sheets = [].slice.call(document.getElementsByTagName("link"));
+	// 			var head = document.getElementsByTagName("head")[0];
+	// 			for (var i = 0; i < sheets.length; ++i) {
+	// 				var elem = sheets[i];
+	// 				var parent = elem.parentElement || head;
+	// 				parent.removeChild(elem);
+	// 				var rel = elem.rel;
+	// 				if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+	// 					var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+	// 					elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+	// 				}
+	// 				parent.appendChild(elem);
+	// 			}
+	// 		}
+	// 		var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+	// 		var address = protocol + window.location.host + window.location.pathname + '/ws';
+	// 		var socket = new WebSocket(address);
+	// 		socket.onmessage = function (msg) {
+	// 			if (msg.data == 'reload') window.location.reload();
+	// 			else if (msg.data == 'refreshcss') refreshCSS();
+	// 		};
+	// 		if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+	// 			console.log('Live reload enabled.');
+	// 			sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+	// 		}
+	// 	})();
+	// }
+	// else {
+	// 	console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	// }
 	// ]]>
+
+
+
+
+
 </script>
 </body>
 </html>
