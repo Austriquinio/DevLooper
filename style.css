@@ -41,7 +41,7 @@ nav .animation {
   top: 0;
   /* bottom: 0; */
   z-index: 0;
-  background: #FFD600;
+  background: #00ff99;
   border-radius: 100px;
   transition: all .5s ease 0s;
 }
@@ -180,10 +180,10 @@ html::-webkit-scrollbar-thumb {
 
 .fundo {
   height: 35vh;
-  width: 200vh;
+  width: 180vh;
 
   background: var(--clr-1);
-  border-radius: 10rem;
+  border-radius: 180px;
 
   display: flex;
   position: relative;
@@ -311,7 +311,7 @@ ul {
 }
 
 .footer {
-  background-color: #008958;
+  background-color: #005034;
   padding: 70px 0;
 }
 
@@ -426,13 +426,13 @@ ul {
  }
 
  .card {
-   padding-top: 100px;
-   transform-style: preserve-3d;
-   background-image: url("https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgbb&w=1260&h=750&dpr=1");
-   background-position: center center;
-   width: 100%;
-   transition: all 0.5s ease-in-out;
-   border-radius: 10px;
+  padding-top: 125px;
+  transform-style: preserve-3d;
+  background-image: url(https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgbb&w=1260&h=750&dpr=1);
+  background-position: center center;
+  width: 125%;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
  }
 
  .card:hover {
@@ -487,7 +487,7 @@ ul {
 
  .card-content {
    padding-top: 15px;
-   font-size: 12px;
+   font-size: 24px;
    color: rgb(185, 185, 185);
    transition: all 0.5s ease-in-out;
    transform: translate3d(0px, 0px, 20px);
@@ -513,16 +513,17 @@ ul {
  }
 
  .date-box {
-   position: absolute;
-   top: 75px;
-   left: 100px;
-   height: 60px;
-   width: 60px;
-   border-radius: 10px;
-   padding: 10px;
-   box-shadow: rgb(134, 134, 134) 0px 20px 60px 0px, rgb(255, 215, 0) 0px 18px 36px -18px;
-   transform: translate3d(0px, 0px, 50px);
-   display: flex;
+  position: absolute;
+  top: 90px;
+  left: 180px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  padding: 0px;
+  box-shadow: rgb(134, 134, 134) 0px 20px 60px 0px, rgb(255, 215, 0) 0px 18px 36px -18px;
+  transform: translate3d(0px, 0px, 50px);
+  display: flex;
+  align-content: flex-end;
  }
 
  .date-box img {
@@ -530,13 +531,13 @@ ul {
  }
 
  .date-box2 {
-   position: absolute;
-   top: 75px;
-   left: 100px;
-   height: 60px;
-   width: 60px;
-   border-radius: 100px;
-   padding: 10px;
+  position: absolute;
+  top: 90px;
+  left: 180px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  padding: 0px;
    box-shadow: rgb(30, 60, 255) 0px 20px 60px 0px, rgb(255, 215, 0) 0px 18px 36px -18px;
    transform: translate3d(0px, 0px, 50px);
    display: flex;
@@ -548,13 +549,13 @@ ul {
  }
 
  .date-box3 {
-   position: absolute;
-   top: 75px;
-   left: 100px;
-   height: 60px;
-   width: 60px;
-   border-radius: 100px;
-   padding: 10px;
+  position: absolute;
+  top: 90px;
+  left: 180px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+  padding: 0px;
    box-shadow: rgb(255, 30, 30) 0px 20px 60px 0px, rgb(255, 215, 0) 0px 18px 36px -18px;
    transform: translate3d(0px, 0px, 50px);
    display: flex;
@@ -715,3 +716,179 @@ ul {
    background: transparent;
    box-shadow: 0px 0px 0px 100vh black;
  }
+
+ /*Contato*/
+
+
+ .container3{
+  min-height: 100vh;
+  background: #FFD600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("img/bg.png") no-repeat center center/cover;
+}
+
+.container3 form{
+  width: 670px;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 20px 20px 50px rgba(62, 62, 62, 0.5);
+  border-radius: 15px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  flex-wrap: wrap;
+}
+
+.Logotipo img {
+  width: 10%;
+}
+
+.container3 form h1{
+  color: #ffffff;
+  font-weight: 500;
+  margin-top: 20px;
+  width: 500px;
+  text-align: center;
+}
+
+.container3 form input{
+  width: 290px;
+  height: 40px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  margin-bottom: 10px;
+  background: none;
+  border-bottom: 2px solid #ffffff;
+}
+
+.container3 form input::placeholder{
+  color: #ffffff;
+}
+
+.container3 form #lastName,
+.container3 form #mobile{
+  margin-left: 20px;
+}
+
+.container3 form h4{
+  color: #fff;
+  font-weight: 300;
+  width: 600px;
+  margin-top: 20px;
+}
+
+.container3 form textarea{
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-weight: 200;
+  font-size: 15px;
+  padding: 10px;
+  outline: none;
+  min-width: 600px;
+  max-width: 600px;
+  min-height: 80px;
+  max-height: 80px;
+}
+
+textarea::-webkit-scrollbar{
+  width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb{
+  background-color: rgba(194,194,194,0.713);
+}
+
+.container3 form #btn{
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 50px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #333;
+  width: 145px;
+  padding: 0;
+  margin-right: 11px;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+
+.container3 form #btn:hover{
+  opacity: 0.7;
+}
+
+.btn {
+  margin: 0;
+  padding: 20px 40px;
+  border: none;
+  outline: none;
+  color: #FFF;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 25px;
+}
+
+.btn::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00A369;
+  left: 0;
+  top: 0;
+  border-radius: 25px;
+}
+
+/* glow */
+.btn::before {
+  content: "";
+  background: linear-gradient(45deg, #0059fd, #4400ff, rgb(0, 163, 105), #00FFA3, #00A369, #4400ff, #0059fd);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-size: 423%;
+  z-index: -1;
+  width: calc(100% + 0px);
+  height: calc(100% + 0px);
+  filter: blur(7px);
+  animation: glowing 20s linear infinite;
+  transition: opacity .30s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* hover */
+.btn:hover::before {
+  opacity: 1;
+}
+
+.btn:active:after {
+  background: transparent;
+}
+
+.btn:active {
+  color: #000;
+  font-weight: bold;
+}
